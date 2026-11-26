@@ -43,6 +43,27 @@ html {
   scroll-padding-top: 72px;
 }
 
+/* Scroll Reveal Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Experience Card Hover Effect */
 .exp-card {
   transition: transform 0.3s ease,
@@ -1335,7 +1356,7 @@ footer {
 
   <div class="exp-card">
     <div>
-      <div class="exp-role">Intern</div>
+      <div class="exp-role">AI & IoT Intern</div>
       <div class="exp-org">Zeno</div>
       <p class="exp-desc">Gained practical experience through internship-based learning, professional workflows, and collaborative tasks.</p>
     </div>
