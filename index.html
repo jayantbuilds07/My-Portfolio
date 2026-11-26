@@ -43,6 +43,38 @@ html {
   scroll-padding-top: 72px;
 }
 
+/* Experience Card Hover Effect */
+.exp-card {
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
+  cursor: default;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(36, 92, 85, 0.12);
+  border-color: var(--accent);
+}
+
+.exp-card .exp-role {
+  transition: color 0.3s ease;
+}
+
+.exp-card:hover .exp-role {
+  color: var(--accent);
+}
+
+.exp-card .exp-status {
+  transition: background 0.3s ease,
+              color 0.3s ease;
+}
+
+.exp-card:hover .exp-status {
+  background: var(--accent);
+  color: #fff;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -1226,15 +1258,7 @@ footer {
           <span class="skill-tag">Tinkercad</span>
         </div>
       </div>
-      <div class="skill-block">
-        <span class="skill-block-icon">🛰️</span>
-        <h4>Remote Sensing & GIS</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">GIS Basics</span>
-          <span class="skill-tag">Geodata Analytics</span>
-          <span class="skill-tag">ISRO Tools</span>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -1293,42 +1317,47 @@ footer {
   <div class="wrap">
     <div class="fade-in">
       <div class="section-label">Experience</div>
-      <h2 class="section-title">Competitions & Hackathons</h2>
+      <h2 class="section-title">Professional Exposure & Internships</h2>
       <p class="section-sub">Real-world engineering challenges where ideas meet execution under pressure.</p>
     </div>
     <div class="exp-list fade-in">
-      <div class="exp-card">
-        <div>
-          <div class="exp-role">FOSSEE / IIT Bombay Makeathon 2026</div>
-          <div class="exp-org">IIT Bombay — Flood Early Warning System</div>
-          <p class="exp-desc">Built a flood early warning system using sensor networks and data analytics pipelines. Developed hardware prototyping and software integration for the build phase.</p>
-        </div>
-        <div>
-          <div class="exp-duration">Aug–Sep 2026</div>
-          <span class="exp-status">Competed</span>
-        </div>
-      </div>
-      <div class="exp-card">
-        <div>
-          <div class="exp-role">MSME Idea Hackathon 6.0</div>
-          <div class="exp-org">SKCET — Sentinel &amp; PulseGuard Concepts</div>
-          <p class="exp-desc">Submitted two innovation concepts: Sentinel (smart industrial safety monitoring) and PulseGuard (health monitoring wearable). Developed through ideation, prototyping, and presentation stages.</p>
-        </div>
-        <div>
-          <div class="exp-duration">2025–26</div>
-          <span class="exp-status">Submitted</span>
-        </div>
-      </div>
-      <div class="exp-card">
-        <div>
-          <div class="exp-role">Product Matters 6.0</div>
-          <div class="exp-org">E-Cell, IIT Guwahati</div>
-          <p class="exp-desc">Ranked in the top 2.5% of participants, demonstrating product management skills, creative problem-solving, and structured product thinking through real-world case challenges.</p>
-        </div>
-        <div>
-          <div class="exp-duration">2025–26</div>
-          <span class="exp-status">Top 2.5%</span>
-        </div>
+  <div class="exp-card">
+    <div>
+      <div class="exp-role">IoT & Robotics Intern</div>
+      <div class="exp-org">UNLOX</div>
+      <p class="exp-desc">Explored IoT and robotics concepts through a structured online, project-based internship. Gained theoretical knowledge and practical insights into connected systems, robotics applications, and emerging technologies.</p>
+    </div>
+    <div>
+      <div class="exp-duration">3 Months</div>
+      <span class="exp-status">Completed</span>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div>
+      <div class="exp-role">Intern</div>
+      <div class="exp-org">Zeno</div>
+      <p class="exp-desc">Gained practical experience through internship-based learning, professional workflows, and collaborative tasks.</p>
+    </div>
+    <div>
+      <div class="exp-duration">1 Month</div>
+      <span class="exp-status">Completed</span>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div>
+      <div class="exp-role">Creative Intern</div>
+      <div class="exp-org">E-Cell, IIT Bombay</div>
+      <p class="exp-desc">Contributed to creative activities through design and video editing, supporting promotional content and engagement initiatives for E-Summit 2026.</p>
+    </div>
+    <div>
+      <div class="exp-duration">2026</div>
+      <span class="exp-status">Internship</span>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </div>
